@@ -334,6 +334,12 @@ body {
 }
 
 .product-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-card:hover {
+    cursor: pointer;
     background: white;
     border-radius: 12px;
     overflow: hidden;
@@ -448,5 +454,69 @@ body {
 
     .hero-title {
         font-size: 1.8rem;
+    }
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Update Responsive Design */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease-in-out;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 90;
+    }
+    
+    .nav.active {
+        right: 0;
+    }
+    
+    .nav-wrapper {
+        position: relative;
+    }
+    
+    /* When menu is open, transform hamburger to X */
+    .hamburger-menu.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    .hamburger-menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger-menu.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
     }
 }
