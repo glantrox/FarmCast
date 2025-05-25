@@ -160,7 +160,7 @@
 .cef-left {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: center;
 }
 
 
