@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+}
+
+.button-primary {
+    background-color: #159458;
+    padding: 12px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: .6s;
+}
+
+.button-primary:hover {
+    background-color: #1ab46c;
+}
