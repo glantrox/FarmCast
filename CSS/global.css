@@ -25,7 +25,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 42px;
+    padding: 82px;
     align-items: center;
 }
 
@@ -58,7 +58,6 @@ body {
 
 .nb-active {
     font-weight: 700;
-
 }
 
 .navbar a {
